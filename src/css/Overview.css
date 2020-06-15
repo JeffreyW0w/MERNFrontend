@@ -1,0 +1,10 @@
+#overview-wrapper {
+  height: 100vh;
+  max-height: 100vh;
+  background-color: white;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}

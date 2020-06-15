@@ -1,0 +1,7 @@
+export const REDIRECT_OVERVIEW = "REDIRECT_OVERVIEW";
+export const REDIRECT_LIST = "REDIRECT_LIST";
+export const UPDATE_USER = "UPDATE_USER";
+export const UPDATE_USER_LIST = "UPDATE_USER_LIST";
+export const DELETE_USER = "DELETE_USER";
+export const ADD_NEW_USER = "ADD_NEW_USER";
+export const CREATE_USER = "CREATE_USER";

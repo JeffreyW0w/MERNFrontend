@@ -1,0 +1,37 @@
+#new-user-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+  height: 90%;
+  list-style-type: none;
+}
+
+#input-wrapper {
+  margin: 20px;
+}
+
+#new-user-input-wrapper input {
+  width: 40%;
+  height: 40px;
+  margin: 1%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#new-user-input-wrapper button {
+  height: 40px;
+  width: 40%;
+  margin: 1%;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+}
+
+#new-user-input-wrapper button:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  border: 0;
+}

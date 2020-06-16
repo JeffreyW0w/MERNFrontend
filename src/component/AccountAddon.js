@@ -60,7 +60,14 @@ class AccountAddon extends React.Component {
   updateBtnClicked = (e) => {
     let id = e.target.id;
     let requestObj = {};
-    requestObj[id] = this.inputs[id];
+    if (id === "tags") {
+      requestObj[id] = this.inputs[id]
+        .split(",")
+        .map((tag) => tag.trim())
+        .filter((tag) => tag.length !== 0);
+    } else {
+      requestObj[id] = this.inputs[id];
+    }
     axios
       .put(`http://localhost:5000/updateUser/${this.props.user.id}`, requestObj)
       .then((response) => {

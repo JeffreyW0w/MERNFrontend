@@ -21,13 +21,6 @@ function mapStateToProps(state) {
 }
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      users: [],
-    };
-  }
-
   /**
    * fetch user when mounted
    */
@@ -44,9 +37,6 @@ class App extends React.Component {
     try {
       let result = await axios.get("http://localhost:5000/listUser");
       this.props.updateUserList({
-        users: result.data,
-      });
-      this.setState({
         users: result.data,
       });
     } catch (e) {

@@ -50,7 +50,7 @@ class AccountAddon extends React.Component {
         }
       })
       .catch((e) => {
-        alert("there is an error");
+        alert(e.response.data);
       });
   };
 
@@ -72,7 +72,7 @@ class AccountAddon extends React.Component {
         }
       })
       .catch((e) => {
-        alert(e);
+        alert(e.response.data);
       });
   };
 

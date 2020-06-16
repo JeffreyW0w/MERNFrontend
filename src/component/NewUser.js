@@ -48,10 +48,12 @@ class NewUser extends React.Component {
             ...this.inputs,
           });
         } else {
-          alert("Failed to add new user");
+          alert(response.data);
         }
       })
-      .catch((e) => alert(e));
+      .catch((e) => {
+        alert(e.response.data);
+      });
   };
   render() {
     return (

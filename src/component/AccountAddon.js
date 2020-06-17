@@ -138,7 +138,6 @@ class AccountAddon extends React.Component {
           <label className={"current-data"}>{this.props.user.employer}</label>
         </div>
         <div id={"input-wrapper"}>
-          {" "}
           <input
             placeholder={"phone"}
             id={"phone"}

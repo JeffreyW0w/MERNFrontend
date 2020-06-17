@@ -55,6 +55,7 @@ class NewUser extends React.Component {
         alert(e.response.data);
       });
   };
+
   render() {
     return (
       <ul id={"new-user-input-wrapper"}>
